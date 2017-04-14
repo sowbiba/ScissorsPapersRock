@@ -36,8 +36,8 @@ Vous êtes enfermés avec une autre IA, dont vous ne connaissez pas l'identité.
 Vous avez trois choix : pierre (rock), feuille (paper) ou ciseaux (scissors).
 En fonction de vos deux choix, les gains (ou pertes) sont répartis de la manière suivante.
 
-| Moi @ L'autre | pierre          | feuille    |ciseaux    |
-| ------------- |: -------------: | ---------: |---------: |
+| Moi @ L'autre | pierre          | feuille    | ciseaux   |
+| ------------- | --------------- | ---------- |---------- |
 | pierre        | 1 @ 1           | 0 @ 5      | 5 @ 0     |
 | feuille       | 5 @ 0           | 1 @ 1      | 0 @ 5     |
 | ciseaux       | 0 @ 5           | 5 @ 0      | 1 @ 1     |
