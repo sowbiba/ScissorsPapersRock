@@ -54,14 +54,14 @@ class AlphaPlayer extends Player
         if ($myScore > $oppScore) { // Im winning \o/
             return $this->myStrategy();
         } else {  // Im losing /o\ pick my opponent strategy
-            $a = $this->getOpponent($this->result->getStatsFor($this->opponentSide)['name']);
+            $opponent = $this->getOpponent($this->result->getStatsFor($this->opponentSide)['name']);
 
-            if (empty($a) || ! is_object($a)) {
+            if (empty($opponent) || ! is_object($opponent)) {
                 return parent::paperChoice();
             }
 
             try {
-                switch ($a->getChoice()) {
+                switch ($opponent->getChoice()) {
                     case parent::rockChoice(): // he responded rock
                         return parent::paperChoice();
                         break;
@@ -76,7 +76,7 @@ class AlphaPlayer extends Player
                 return parent::paperChoice();
             }
 
-            return $a->getChoice();
+            return $opponent->getChoice();
         }
     }
 
